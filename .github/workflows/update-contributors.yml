@@ -1,0 +1,61 @@
+name: 🤝 Atualizar Contribuidores
+
+on:
+  # Executa semanalmente às segundas-feiras às 9h (UTC)
+  schedule:
+    - cron: '0 9 * * 1'
+  
+  # Executa quando há push na branch main
+  push:
+    branches:
+      - main
+  
+  # Permite execução manual
+  workflow_dispatch:
+
+jobs:
+  update-contributors:
+    runs-on: ubuntu-latest
+    name: 📝 Atualizar lista de contribuidores
+    
+    steps:
+      - name: 🔄 Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 🤝 Atualizar contribuidores no README
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
+        with:
+          # Configurações da action
+          image_size: 80
+          columns_per_row: 8
+          max_contributors: 50
+          use_username: true
+          readme_path: 'readme.md'
+          
+          # Configurações de commit
+          commit_message: '🤝 Atualizar lista de contribuidores'
+          committer_username: 'github-actions[bot]'
+          committer_email: 'github-actions[bot]@users.noreply.github.com'
+          
+          # Configurações visuais
+          contributors_header: '## 🤝 Contribuidores'
+          contributors_footer: |
+            
+            ---
+            
+            💙 **Obrigado a todos que contribuem para tornar o Python Floripa ainda melhor!**
+            
+            *Para contribuir com a documentação, abra um Pull Request ou entre em contato através dos nossos canais.*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ✅ Verificar mudanças
+        run: |
+          if git diff --quiet; then
+            echo "✨ Nenhuma alteração detectada na lista de contribuidores"
+          else
+            echo "🎉 Lista de contribuidores atualizada com sucesso!"
+          fi 
