@@ -13,6 +13,10 @@ on:
   # Permite execução manual
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-contributors:
     runs-on: ubuntu-latest
@@ -28,10 +32,9 @@ jobs:
       - name: 🤝 Atualizar contribuidores no README
         uses: akhilmhdh/contributors-readme-action@v2.3.6
         with:
-          # Configurações da action
+          # Configurações básicas
           image_size: 80
           columns_per_row: 8
-          max_contributors: 50
           use_username: true
           readme_path: 'readme.md'
           
@@ -39,16 +42,6 @@ jobs:
           commit_message: '🤝 Atualizar lista de contribuidores'
           committer_username: 'github-actions[bot]'
           committer_email: 'github-actions[bot]@users.noreply.github.com'
-          
-          # Configurações visuais
-          contributors_header: '## 🤝 Contribuidores'
-          contributors_footer: |
-            
-            ---
-            
-            💙 **Obrigado a todos que contribuem para tornar o Python Floripa ainda melhor!**
-            
-            *Para contribuir com a documentação, abra um Pull Request ou entre em contato através dos nossos canais.*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -504,8 +504,12 @@ Este é um documento vivo e em constante evolução. Se você tem sugestões de 
 
 ## 🤝 Contribuidores
 
+💙 **Obrigado a todos que contribuem para tornar o Python Floripa ainda melhor!**
+
 <!-- readme: contributors -start -->
 <!-- readme: contributors -end -->
+
+*Para contribuir com a documentação, abra um Pull Request ou entre em contato através dos nossos canais.*
 
 ---
 
