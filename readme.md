@@ -507,6 +507,16 @@ Este é um documento vivo e em constante evolução. Se você tem sugestões de 
 💙 **Obrigado a todos que contribuem para tornar o Python Floripa ainda melhor!**
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/maxsonferovante">
+            <img src="https://avatars.githubusercontent.com/u/10967077?v=4" width="80;" alt="maxsonferovante"/>
+            <br />
+            <sub><b>maxsonferovante</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 *Para contribuir com a documentação, abra um Pull Request ou entre em contato através dos nossos canais.*
