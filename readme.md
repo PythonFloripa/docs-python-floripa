@@ -515,6 +515,13 @@ Este é um documento vivo e em constante evolução. Se você tem sugestões de 
             <br />
             <sub><b>maxsonferovante</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Marianttonia">
+            <img src="https://avatars.githubusercontent.com/u/119700234?v=4" width="80;" alt="Marianttonia"/>
+            <br />
+            <sub><b>Marianttonia</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
