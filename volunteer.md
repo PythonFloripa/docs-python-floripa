@@ -52,3 +52,5 @@ Se tiver dúvidas ou quiser conversar, não hesite em nos procurar!
 
 Com carinho,  
 **Equipe Python Floripa 🐍🌊**
+
+[@dan5e3s6ares](https://www.github.com/dan5e3s6ares) - 🤝 Concordo
