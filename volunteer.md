@@ -48,7 +48,10 @@ Ao se voluntariar, esperamos que você:
 
 ## ✨ Obrigado!
 A Python Floripa só é possível graças a pessoas como você. Seja muito bem-vindo(a) ao nosso time de voluntariado. 💛  
+
 Se tiver dúvidas ou quiser conversar, não hesite em nos procurar!  
+
+dan5e3s6ares - Concordo
 
 Com carinho,  
 **Equipe Python Floripa 🐍🌊**
